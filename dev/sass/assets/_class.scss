@@ -1,0 +1,26 @@
+// Global class
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body *:focus {
+  outline: none;
+}
+
+body.focus-tab--enable *:focus {
+  outline-color: #4d90fe;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 7px;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
