@@ -45,5 +45,6 @@
 		"jquery": "^3.4.1",
 		"slick-slider": "^1.8.2",
 		"wow.js": "^1.2.2"
-	}
+	},
+	"repository": "https://github.com/Successful1991/start.git"
 }

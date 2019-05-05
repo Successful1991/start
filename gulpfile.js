@@ -155,25 +155,25 @@ gulp.task('_scripts', gulp.parallel('eslint', () => {
 
 // Подключаем JS файлы бибилотек, установленные bower'ом, конкатенируем их и минифицируем
 gulp.task('jsLibs', () => {
-	return gulp.src(`${dev}/js/libs.js`)        // файл, в который импортируются наши библиотеки
-	.pipe(plumber({
-		errorHandler: notify.onError({
-			title: 'JavaScript',
-			message: '<%= error.message %>'     // выводим сообщение об ошибке
-		})
-	}))
-	.pipe(importFile({                          //
-		prefix: '@@',                           // импортим все файлы, описанные в результируещем js
-		basepath: '@file'                       //
-	}))
-	.pipe(uglify())                             // минификация JS
-	.pipe(rename({
-		suffix: '.min'                          // переименовываем сжатый файл
-	}))
-	.pipe(gulp.dest(`${build}/js`))             // путь вывода файлов
-	.pipe(browserSync.reload({
-		stream: true                            // перезагружаем страницу
-	}));
+  return gulp.src(`${dev}/js/libs.js`)        // файл, в который импортируются наши библиотеки
+    .pipe(plumber({
+      errorHandler: notify.onError({
+        title: 'JavaScript',
+        message: '<%= error.message %>'     // выводим сообщение об ошибке
+      })
+    }))
+    .pipe(importFile({                          //
+      prefix: '@@',                           // импортим все файлы, описанные в результируещем js
+      basepath: '@file'                       //
+    }))
+    .pipe(uglify())                             // минификация JS
+    .pipe(rename({
+      suffix: '.min'                          // переименовываем сжатый файл
+    }))
+    .pipe(gulp.dest(`${build}/js`))             // путь вывода файлов
+    .pipe(browserSync.reload({
+      stream: true                            // перезагружаем страницу
+    }));
 });
 
 // Минифицируем изображения и кидаем их в кэш
