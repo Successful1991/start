@@ -8,7 +8,7 @@
 		"pure",
 		"start"
 	],
-	"author": "Nikita Mihalyov <nikita.mihalyov@gmail.com>",
+	"author": "smart only",
 	"license": "ISC",
 	"devDependencies": {
 		"babel-eslint": "^10.0.1",
@@ -39,12 +39,13 @@
 		"gulp-uglify": "^3.0.0",
 		"imagemin-gifsicle": "^6.0.1",
 		"imagemin-jpegtran": "^6.0.0",
-		"imagemin-optipng": "^6.0.0"
+		"imagemin-optipng": "^6.0.0",
+		"gulp-cheerio": "^0.6.3",
+		"gulp-replace": "^1.0.0",
+		"gulp-svg-sprites": "^4.1.2",
+		"gulp-svgmin": "^2.1.0",
+		"smart-grid": "^2.1.2"
 	},
-	"dependencies": {
-		"jquery": "^3.4.1",
-		"slick-slider": "^1.8.2",
-		"wow.js": "^1.2.2"
-	},
+	"dependencies": {},
 	"repository": "https://github.com/Successful1991/start.git"
 }
