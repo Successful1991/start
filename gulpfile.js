@@ -36,6 +36,7 @@ gulp.task('sass', () => {
 	.pipe(sass({
 		outputStyle: ':nested'                  // компиляции в CSS с отступами
 	}))
+
 	.on('error', notify.onError({
 		title: 'SCSS',
 		message: '<%= error.message %>'         // вывод сообщения об ошибке
